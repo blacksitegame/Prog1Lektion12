@@ -10,16 +10,16 @@ public class Fan {
     private String color;
 
 
-    public Fan(int speed, boolean on, double radius, String color){
+    public Fan(int speed, boolean on, double radius, String color) {
         setSpeed(speed);
         setOn(on);
         setRadius(radius);
         setColor(color);
-        toString(speed,on,radius,color);
+        toString(speed, on, radius, color);
     }
 
 
-    public void defaultFan(){
+    public void defaultFan() {
         defaultSpeed();
         defaultOn();
         defaultRadius();
@@ -27,30 +27,28 @@ public class Fan {
     }
 
 
-
-    static public void toString (int speed, boolean on, double radius, String color){
+    static public void toString(int speed, boolean on, double radius, String color) {
         if (on) {
             System.out.println("The speed of the fan is: " + speed + ". The fan is on");
             System.out.println("The radius of the fan is: " + radius + ". The color is: " + color);
-        }
-        else {
+        } else {
             System.out.println("The radius of the fan is: " + radius + ". The color is: " + color);
         }
     }
 
-    public void defaultSpeed (){
+    public void defaultSpeed() {
         speed = slow;
     }
 
-    public void defaultOn (){
+    public void defaultOn() {
         on = false;
     }
 
-    public void defaultRadius (){
+    public void defaultRadius() {
         radius = 5;
     }
 
-    public void defaultColor (){
+    public void defaultColor() {
         color = "blue";
     }
 
